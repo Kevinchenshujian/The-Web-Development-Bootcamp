@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registeration Form </title>
+</head>
+<body>
+	<h1>Register</h1>
+	
+	<form>
+		<label for="firstname">First Name</label>
+		<input name="name" id="firstname" type="text" placeholder="John" required>
+		<label for="lastname">Last Name</label>
+		<input name="name" id="lastname" type="text" placeholder="Smith" required>
+		<div>
+			<label for="male">Male</label>
+			<input name="radio-choice" id="male" type="radio" >
+			<label for="female">Female</label>
+			<input name="radio-choice" id="female" type="radio" >
+			<label for="other">Other</label>
+			<input name="radio-choice" id="other" type="radio" >
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input name="email" id="firstname" type="Email" placeholder="your email" required>
+			<label for="password">Password</label>
+			<!-- <input name="password" id="password" type="password" required minlength="5" maxlength="10"> -->
+			<input name="password" id="password" type="password" pattern=".{5,10}" required title="5 to 10 characters" >
+		</div>
+		<div>
+			<label>
+				<!-- maybe in this way, the connection between input and label is automatically finished-->
+				Birthday:
+				<select name=month>
+					<option>Month</option>
+					<option>Jan</option>
+					<option>Feb</option>
+					<option>Mar</option>
+				</select>
+				<select name=day>
+					<option>Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+				<select name=year>
+					<option>Year</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+				</select>
+			</label>
+		</div>
+		<div>
+			<label for="agree">I agree to the terms and conditions</label>
+			<input name="agreed" type="checkbox" id="agree">
+		</div>
+		<input type="submit" >
+	</form>
+</body>
+</html>
