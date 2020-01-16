@@ -1,0 +1,23 @@
+h1{
+	text-align: center;
+}
+
+td{
+	width:100px;
+	height:100px;
+/*	background: purple;*/
+}
+
+table{
+	margin:0 auto;
+}
+
+.centerv{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.centerh{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
